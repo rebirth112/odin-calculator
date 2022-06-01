@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 40px;
+    
+}
+.content {
+    display:block;
+    position: relative;
+    z-index: 3;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    font-style:italic;
+    margin-bottom: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-style:italic;
+    margin-top: 40px;
+}
+
+#screen {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9px;
+}
+
+.calculator-border {
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    height: 680px;
+    margin: auto;
+    width: 22%;
+    padding-top: 1px;
+}
+
+.for-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+#screen {
+    width: 375px;
+    height: 80px;
+    background-color: #696969;
+    color: white;
+    text-align: end;
+    font-size: 20px;
+}
+
+.input-keys {
+    display: grid;
+    grid-template-rows: repeat(7, 90px);
+    grid-template-columns: repeat(4, 90px);
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn {
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    background-color: #696969;
+    border-color: #696969;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #303030;
+    border-color: #303030;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(twinkling.png) repeat top center;
+  z-index:1;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url(clouds.png) repeat top center;
+    z-index:2;
+    opacity: .4;
+    animation:move-clouds-back 200s linear infinite;
+}
+
+
+

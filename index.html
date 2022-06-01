@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Calculator!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+<div class="content">
+    <h1 class="header">Welcome to Jerry's Calculator!</h1>
+    <div class="outside-contaner">
+    <div class="calculator-border">
+    <div class="for-input">
+        <input type="text" id="screen" value=""/>
+    </div>
+        <div class="input-keys">
+            <button type="button" class="btn" value="+" onclick="showOperator('+')">+</button>
+            <button type="button" class="btn" value="-" onclick="showOperator('-')">-</button>
+            <button type="button" class="btn" value="*" onclick="showOperator('*')">&times;</button>
+            <button type="button" class="btn" value="/" onclick="showOperator('/')">&divide;</button>
+
+            <button type="button" class="btn" value="7" onclick="show('7')">7</button>
+            <button type="button" class="btn" value="8" onclick="show('8')">8</button>
+            <button type="button" class="btn" value="9" onclick="show('9')">9</button>
+            <button type="button" class="btn" value="back" onclick="backspace()">BACK</button>
+
+            <button type="button" class="btn" value="4" onclick="show('4')">4</button>
+            <button type="button" class="btn" value="5" onclick="show('5')">5</button>
+            <button type="button" class="btn" value="6" onclick="show('6')">6</button>
+            <button type="button" class="btn" value="sqrt" onclick="show(' sqrt')">&#8730;</button>
+
+            <button type="button" class="btn" value="1" onclick="show('1')">1</button>
+            <button type="button" class="btn" value="2" onclick="show('2')">2</button>
+            <button type="button" class="btn" value="3" onclick="show('3')">3</button>
+            <button type="button" class="btn" value="exp2" onclick="show(' Power ')">x &#178;</button>
+
+            <button type="button" class="btn" value="0" onclick="show('0')">0</button>
+            <button type="button" class="btn" value="." onclick="show('.')">.</button>
+            <button type="button" class="btn" value="AC" onclick="clearScreen()">AC</button>
+            <button type="button" class="btn" value="=" onclick="calc()">=</button>
+        </div>
+    </div>
+</div>
+    <div class="footer">
+        <p>This was created as part of the Odin Project Curriculum</p>
+    </div>
+</div>
+</body>
+</html>
